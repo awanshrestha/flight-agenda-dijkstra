@@ -9,7 +9,7 @@ A travel agent requests software for making an agenda of flights for clients. Th
 ### Problem Overview
 This is the shortest path algorithm problem as we need to calculate the earliest arrival time, with a given start time. So, we can take the problem as a di graph where all the airports are nodes and the flights are the di edges with weight of time interval i.e. the time difference between arrival time of destination airport and departure time of source airport.
 
-Here we need to take care that while going from origin airport to destination airport, and while taking flights from one airport to another, we can take only those flights which can be caught. So, time plays an important role in this problem as we can take only the flights whose departure time from the airport is later than our arrival time at the airport.
+Here we need to take care that while going from origin airport to destination airport, and while taking flights from one airport to another, we can take only those flights which can be caught. So, time plays an important role in this problem, as we can take only the flights whose departure time from the airport is later than our arrival time at the airport.
 
 So, to solve this we use Dijkstra’s Algorithm with a little modification.
 
